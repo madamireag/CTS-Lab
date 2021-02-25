@@ -10,11 +10,14 @@ public class Main {
         int[] nrCont1=new int[]{2,1,0,1};
         TipContainer[]tip=new TipContainer[4];
         tip=TipContainer.values();
-
+        // Schimbare nume variabila in portContainer1 deoarece pc1 nu e suficient de explicit (refactor)
         PortContainer pc1=new PortContainer("Port Container 1",tip,nrCont1);
+
+        // toata partea asta de cod ar putea fi optimizata
+        // prin crearea unei metode care citeste de la tastatura, creeaza un obiect si il adauga in colectie
         System.out.println(pc1);
         PortContainer pc2=new PortContainer();
-        //TESTARE CLONE ---------------------------------------------------------
+
         try {
             pc2 = (PortContainer)    pc1.clone();
         } catch (CloneNotSupportedException e) {
@@ -25,13 +28,13 @@ public class Main {
         System.out.println(pc2);
         pc2.setEticheta("SS Tipton");
         int[] nrCont2=new int[]{3,1,2,0};
-        //TESTARE GETCAPACITATE->pc1: 10*2+1*25+0*50+1*100=145 -------------------------
+
         System.out.println("Capacitatea navei "+pc1.getEticheta()+" este "+
                 pc1.getCapacitate());
         PortContainer pc3=new PortContainer("Port Container 3",tip,nrCont2);
         int[] nrCont3=new int[]{3,4,2,1};
         PortContainer pc4=new PortContainer("Port Container 4",tip,nrCont3);
-        //COLECTIE PORT CONTAINERE-----------------------------------------------------
+
         ArrayList<PortContainer> listaContainere=new ArrayList<PortContainer>();
         listaContainere.add(pc1);
         listaContainere.add(pc2);
@@ -43,7 +46,7 @@ public class Main {
         System.out.println(i);
         }
 
-        //SALVARE COLECTIE IN FISIER------------------------------------------------
+        // formatare cod astfel incat toate declararile de variabile sa fie la inceput
         FileWriter outFile = null;
         BufferedWriter writer = null;
 
@@ -62,7 +65,7 @@ public class Main {
             e.printStackTrace();
         }
 
-     //CITIRE COLECTIE(ARRAYLIST) DIN FISIER SI SALVARE IN ALTA COLECTIE(LINKEDLIST)---------------
+        // daca fisierul e in format gresit crapa, ar trebui adaugata o verificare in sensul asta, sa fie despartite prin virgula si cu campurile din clasa
         System.out.println("\n----CITIRE COLECTIE DIN FISIER SI SALVARE IN ALTA COLECTIE----\n");
         LinkedList<PortContainer> listaNoua = new LinkedList<PortContainer>();
         try {
@@ -98,8 +101,10 @@ public class Main {
         for (PortContainer gigi : listaNoua) {
             System.out.println(gigi);
         }
-        //TESTARE METODA DESCARCA CONTAINER----------------------------------------------
+
         System.out.println("\n---------TESTARE METODA DESCARCA CONTAINER----------");
+        // formatare cod astfel incat toate declararile de variabile sa fie la inceput
+        // fara date harcodate eventual
         Macara macaraMic=new Macara(TipContainer.Mic_10mc,200);
         Macara macaraMica=new Macara(TipContainer.Mic_10mc,400);
         Macara macaraJumbo=new Macara(TipContainer.Jumbo_100mc,500);
@@ -112,7 +117,7 @@ public class Main {
 
 
 
-        //MacaraRobotizata MacaraRobot=new MacaraRobotizata(pc2,macaraMica);
+
 
 
 
