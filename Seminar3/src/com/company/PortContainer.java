@@ -97,18 +97,16 @@ public class PortContainer implements Cloneable,Numarabil {
         StringBuilder builder = new StringBuilder();
         builder.append(this.eticheta);
         builder.append(",");
-        for(int i=0; i<this.tipContainer.length;i++) {
+        for(int i=0; i<this.tipContainer.length-1;i++) {
             builder.append(this.tipContainer[i].toString());
-            if (i!= this.tipContainer.length-1) {
-                builder.append(";");
-            }}
+            builder.append(";");
+
+          }
         builder.append(",");
-        for(int j=0; j<this.NrContainere.length;j++) {
+        for(int j=0; j<this.NrContainere.length-1;j++) {
             builder.append(this.NrContainere[j]);
-            if (j!= this.NrContainere.length-1) {
-                builder.append(";");
-            }
-        }
+            builder.append(";");
+         }
         return builder.toString();
 
 

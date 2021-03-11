@@ -6,10 +6,10 @@ import java.util.LinkedList;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws CloneNotSupportedException, IOException{
         int[] nrContainere=new int[]{2,1,0,1};
         TipContainer[]tip=new TipContainer[4];
-        tip=TipContainer.values();
+        tip = TipContainer.values();
 
         PortContainer portContainer=new PortContainer("Port Container 1",tip,nrContainere);
 
@@ -17,12 +17,9 @@ public class Main {
         System.out.println(portContainer);
         PortContainer portContainer1=new PortContainer();
 
-        try {
-            portContainer1 = (PortContainer)    portContainer.clone();
-        } catch (CloneNotSupportedException e) {
-            System.out.println("Nu s-a putut clona!");
 
-        }
+        portContainer1 = (PortContainer)    portContainer.clone();
+
         System.out.println("\n Clona:\n");
         System.out.println(portContainer1);
         portContainer1.setEticheta("SS Tipton");
@@ -41,14 +38,10 @@ public class Main {
         listaContainere.add(portContainer3);
 
         System.out.println("\n------ Flota de port containere (ArrayList)-------- \n");
-        for(var i:listaContainere){
-        System.out.println(i);
-        }
 
 
         FileWriter outFile = null;
         BufferedWriter writer = null;
-        try {
             outFile = new FileWriter("PortContainere.csv", false);
             writer = new BufferedWriter(outFile);
 
@@ -58,15 +51,10 @@ public class Main {
             }
             writer.close();
             outFile.close();
-        } catch (IOException e) {
-            System.out.println("\n AJUTOR, NU POT SA SCRIU IN FISIER!!\n");
-            e.printStackTrace();
-        }
 
 
         System.out.println("\n----CITIRE COLECTIE DIN FISIER SI SALVARE IN ALTA COLECTIE----\n");
         LinkedList<PortContainer> listaNoua = new LinkedList<PortContainer>();
-        try {
             FileInputStream fileInputStream = new FileInputStream("PortContainere.csv");
             InputStreamReader streamReader = new InputStreamReader(fileInputStream);
             BufferedReader reader = new BufferedReader(streamReader);
@@ -91,20 +79,6 @@ public class Main {
                 listaNoua.add(portContainerCitit);
             }
             reader.close();
-        } catch (IOException e) {
-            System.out.println("\n Ajutor, nu merge citirea din fisier :( \n");
-            e.printStackTrace();
-        }
-        System.out.println("\n------ Colectia de port containere (LinkedList)-------- \n");
-        for (PortContainer gigi : listaNoua) {
-            System.out.println(gigi);
-        }
-
-
-
-
-
-
 
 
         }

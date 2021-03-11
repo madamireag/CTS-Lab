@@ -33,13 +33,12 @@ public class Macara implements Descarcare,Runnable{
     @Override
     public int DescarcaContainer(PortContainer pc, Macara m) {
         int nrcont=0;
-        for(int i=0;i<pc.getTipContainer().length;i++){
-            if(pc.getNrContainereIndex(i)!=0){
-                    if(pc.getTipContainerIndex(i).toString()==m.tipContainer.toString()){
+        for(int i=1;i<pc.getTipContainer().length;i++){
+                 if(pc.getTipContainerIndex(i).toString()==m.tipContainer.toString()){
                         pc.setContainer(i,pc.getNrContainereIndex(i)-1);
                          nrcont=pc.getNrContainereIndex(i);
                     }
-            }
+
 
         }
         return nrcont;
