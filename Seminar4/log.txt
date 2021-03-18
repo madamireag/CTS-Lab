@@ -7,3 +7,10 @@ Thu Mar 18 18:02:54 EET 2021 GUI created
 Thu Mar 18 18:02:54 EET 2021 command line created
 Thu Mar 18 18:19:29 EET 2021 command line created
 Thu Mar 18 18:19:29 EET 2021 GUI created
+Thu Mar 18 18:36:03 EET 2021 command line created
+Thu Mar 18 18:36:03 EET 2021 GUI created
+Thu Mar 18 18:36:03 EET 2021 message from NewMain
+Thu Mar 18 18:42:51 EET 2021 GUI created
+Thu Mar 18 18:42:51 EET 2021 command line created
+Thu Mar 18 18:42:51 EET 2021 message from NewMain
+Thu Mar 18 18:42:51 EET 2021 another message from NewMain
