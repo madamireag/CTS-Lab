@@ -1,0 +1,28 @@
+Thu Mar 18 17:57:09 EET 2021 GUI created
+Thu Mar 18 17:59:17 EET 2021 GUI created
+Thu Mar 18 17:59:17 EET 2021 command line created
+Thu Mar 18 18:00:58 EET 2021 GUI created
+Thu Mar 18 18:01:02 EET 2021 command line created
+Thu Mar 18 18:02:54 EET 2021 GUI created
+Thu Mar 18 18:02:54 EET 2021 command line created
+Thu Mar 18 18:19:29 EET 2021 command line created
+Thu Mar 18 18:19:29 EET 2021 GUI created
+Thu Mar 18 18:36:03 EET 2021 command line created
+Thu Mar 18 18:36:03 EET 2021 GUI created
+Thu Mar 18 18:36:03 EET 2021 message from NewMain
+Thu Mar 18 18:42:51 EET 2021 GUI created
+Thu Mar 18 18:42:51 EET 2021 command line created
+Thu Mar 18 18:42:51 EET 2021 message from NewMain
+Thu Mar 18 18:42:51 EET 2021 another message from NewMain
+Wed Mar 31 17:33:02 EEST 2021 command line created
+Wed Mar 31 17:33:02 EEST 2021 GUI created
+Wed Mar 31 17:33:02 EEST 2021 message from NewMain
+Wed Mar 31 17:33:02 EEST 2021 another message from NewMain
+Wed Mar 31 17:33:12 EEST 2021 command line created
+Wed Mar 31 17:33:12 EEST 2021 GUI created
+Wed Mar 31 17:41:05 EEST 2021 command line created
+Wed Mar 31 17:41:05 EEST 2021 GUI created
+Wed Mar 31 17:49:53 EEST 2021 GUI created
+Wed Mar 31 17:49:53 EEST 2021 command line created
+Wed Mar 31 17:50:43 EEST 2021 command line created
+Wed Mar 31 17:50:43 EEST 2021 GUI created
