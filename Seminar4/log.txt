@@ -14,3 +14,9 @@ Thu Mar 18 18:42:51 EET 2021 GUI created
 Thu Mar 18 18:42:51 EET 2021 command line created
 Thu Mar 18 18:42:51 EET 2021 message from NewMain
 Thu Mar 18 18:42:51 EET 2021 another message from NewMain
+Wed Mar 31 17:33:02 EEST 2021 command line created
+Wed Mar 31 17:33:02 EEST 2021 GUI created
+Wed Mar 31 17:33:02 EEST 2021 message from NewMain
+Wed Mar 31 17:33:02 EEST 2021 another message from NewMain
+Wed Mar 31 17:33:12 EEST 2021 command line created
+Wed Mar 31 17:33:12 EEST 2021 GUI created
