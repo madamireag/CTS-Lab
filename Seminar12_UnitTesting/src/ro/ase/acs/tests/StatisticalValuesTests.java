@@ -42,7 +42,7 @@ public class StatisticalValuesTests {
         } catch (StatisticalException e) {
             fail(e.getMessage());
         }
-        assertEquals("Incorect average", 2, result, 0.01); // le compar la a doua zecimala, daca diferenta e sub 0.01 le consider egale
+        assertEquals("Incorrect average", 2, result, 0.01); // le compar la a doua zecimala, daca diferenta e sub 0.01 le consider egale
     }
 
     @Test(expected = StatisticalException.class)
@@ -73,7 +73,7 @@ public class StatisticalValuesTests {
         statisticalValues.setValues(values);
 
         double result = statisticalValues.getAverage();
-        assertEquals("Incorect average", 1, result, 0.01);
+        assertEquals("Incorrect average", 1, result, 0.01);
     }
 
     @Test(expected = StatisticalException.class)
@@ -98,6 +98,6 @@ public class StatisticalValuesTests {
         statisticalValues.setValues(values);
 
         double result = statisticalValues.getAverage();
-        assertEquals("Incorect average", 2.33, result, 0.01);
+        assertEquals("Incorrect average", 2.33, result, 0.01);
     }
 }
